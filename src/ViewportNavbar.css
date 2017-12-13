@@ -1,0 +1,23 @@
+.viewport-navbar {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  background-color: #d67a00;
+  height: 50px;
+  width: 96%;
+  left: 2%;
+  right: 0px;
+  pointer-events: none;
+  position: absolute;
+  z-index: 5;
+  /*Flex*/
+  display: flex;
+  flex-flow: row-reverse nowrap;
+  align-items: center;
+}
+
+.viewport-navbar .viewport-navbar-item {
+  color: #3d464d;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 0 10px;
+}
+

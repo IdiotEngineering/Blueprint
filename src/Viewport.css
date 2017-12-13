@@ -1,0 +1,15 @@
+.viewport {
+  background: #ececec;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.orthographic-camera {
+  height: 100%;
+  position: absolute;
+  transform-origin: 0% 0%;
+  transform-style: preserve-3d;
+  width: 100%;
+  z-index: 2;
+}

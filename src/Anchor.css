@@ -10,28 +10,48 @@
   background: white;
 }
 
-.anchor:hover {
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-  left: -4px;
-}
+.anchor.input {}
 
 .anchor .edge-mark {
   background-color: #700038;
   border-radius: 2px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  top: 5px;
-  left: -3px;
   position: absolute;
+  top: 5px;
   width: 6px;
-  z-index: -1;
   bottom: 5px;
+  z-index: -1;
 }
 
-.anchor .card {
-  margin-left: 4px;
+.anchor:hover {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 .anchor .value {
   font-weight: bold;
   color: #7d7d7d;
+}
+
+.anchor.input:hover {
+  left: -4px;
+}
+
+.anchor.input .edge-mark {
+  left: -3px;
+}
+
+.anchor.input .card {
+  margin-left: 4px;
+}
+
+.anchor.output:hover {
+  left: 4px;
+}
+
+.anchor.output .edge-mark {
+  right: -3px;
+}
+
+.anchor.output .card {
+  margin-right: 4px;
 }

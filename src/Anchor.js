@@ -7,9 +7,16 @@ export default class Anchor extends Component {
     super(props);
   }
 
+  handleMouseDown = (e) => {
+    e.stopPropagation();
+    this.props.onEdgeDragStart(this, e);
+  };
+
   render() {
+    const {input} = this.props;
     return (
-      <div class='anchor' onMouseDown={e => e.stopPropagation()}>
+      <div class={'anchor ' + (input ? 'input' : 'output')}
+        onMouseDown={this.handleMouseDown}>
         <div class='edge-mark'/>
         <div class='card'>
           <div>Long Input Name</div>

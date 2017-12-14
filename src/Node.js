@@ -67,16 +67,17 @@ export default class Node extends Component {
           </div>
           <div class='layout-row'>
 
-            <div class='flex-grow layout-column'>
-              <Anchor/>
-              <Anchor/>
-              <Anchor/>
+            <div class='flex-grow'>
+              <Anchor input={true} onEdgeDragStart={this.props.onEdgeDragStart}/>
+              <Anchor input={true} onEdgeDragStart={this.props.onEdgeDragStart}/>
+              <Anchor input={true} onEdgeDragStart={this.props.onEdgeDragStart}/>
             </div>
 
             <div style='min-width: 30px;'></div>
 
-            <div class='flex-grow layout-column'>
-              <div>Out Thing</div>
+            <div class='flex-grow'>
+              <Anchor input={false} onEdgeDragStart={this.props.onEdgeDragStart}/>
+              <Anchor input={false} onEdgeDragStart={this.props.onEdgeDragStart}/>
             </div>
 
           </div>
